@@ -1,0 +1,72 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	font-family: verdana;
+}
+
+body{
+	margin-top: 0;
+
+}
+section {
+	background-color: grey;
+	padding: 3px;
+	height: 1000px;
+	margin-bottom: 2px;
+}
+
+#header-nav{
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	border: 0px;
+}
+#nav-container{
+	border: solid black 1px;
+	padding: 0;
+	margin: 0;
+}
+.navbar-header h1{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: larger;
+	min-width: 100px;
+}
+
+#navbar-header-div{
+	width: auto;
+	background-color: #A9DFBF ;
+	float: none;
+	padding: 0;
+	margin: 0;
+}
+#brand {
+	margin: 0;
+}
+#collapsable-nav{
+	border: 1px;
+	clear: both;
+}
+#nav-list {
+	margin: 0;
+}
+#nav-list a {
+	color: #080808;
+	font-weight: 600; 
+	font-size: large;
+	text-align: center;
+}
+
+#nav-list li {
+	border: solid ;
+	border-width: 1px 0px 0px 0px;
+	background-color: lightgrey;
+}
+
+#body-container{
+	float: left;
+}
+#navbar-button{
+	margin: 5px;
+}
+

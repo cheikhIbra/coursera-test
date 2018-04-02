@@ -1,0 +1,12 @@
+<div class="container" style="float:left">
+  <ul>
+    <li ng-repeat="item in items"  style="border: solid .5px">
+      <!-- <div class="row"> -->
+        <div style="font-weight:bold">{{item.short_name}} : {{item.name}}</div>
+        <div>{{item.description}}</div>
+        <button class="btn btn-primary"
+          ng-click="onRemove($index)">Don't want this one!</button>
+      <!-- </div> -->
+    </li>
+  </ul>
+</div>

@@ -27,8 +27,9 @@
 
     var ctrl = this;
     ctrl.searchTerm ="";
-    ctrl.found = [];
+
     ctrl.search = function(){
+      ctrl.found = [];
       if(!ctrl.searchTerm){
         message.show();
         return;

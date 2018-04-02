@@ -68,7 +68,7 @@
         var menu_items = response.data.menu_items;
         // console.log(response.data.menu_items);
         for(var i=0; i< menu_items.length; i++){
-          if(menu_items[i].name.toLowerCase().indexOf(searchTerm) != -1)
+          if(menu_items[i].description.toLowerCase().indexOf(searchTerm) != -1)
             found.push(menu_items[i]);
         }
         return found;

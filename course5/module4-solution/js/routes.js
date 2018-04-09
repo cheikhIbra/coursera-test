@@ -17,7 +17,15 @@
     .state('categories', {
       url:'/categories',
       controller: 'MenuCategoriesController as ctrl',
-      templateUrl:'templates/categories-view.template.html'
+      templateUrl:'templates/categories-view.template.html',
+      resolve: {
+        data: ['MenuDataService', function(MenuDataService ){
+          return MenuDataService.getAllCategories()
+          .then(function(result){
+             return result.data;
+          });
+        }]
+      }
     })
     .state('items', {
       url:'/items/{categoryShortName}',
@@ -30,5 +38,4 @@
       }
     });
   }
-
 })();
